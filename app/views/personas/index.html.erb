@@ -1,0 +1,26 @@
+<h1>Lista de Personas</h1>
+<table>
+<tr>
+<%=@personas.eac do |persona|%>
+<thead>
+<th>Nombre</th>
+<th>Apellido</th>
+<th>Sexo</th>
+<th>Edad</th>
+</thead>
+</tr>
+<tr>
+<td><%= persona.nombre %></td>
+<td><%= persona.apellido %></td>
+<td><%= persona.sexo %></td>
+<td><%= persona.edad %></td>
+<td>
+
+<%= link_to "Mostrar"%>
+<%= link_to "Editar"%>
+<%= link_to "Eliminar"%>
+
+</td>
+</tr>
+<% end %>
+</table>
