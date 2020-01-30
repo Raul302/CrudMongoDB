@@ -1,0 +1,22 @@
+<%= form_for :personas do |f| %>
+
+<div>
+<%= f.label :name%>
+<%= f.text_field :name%>
+</div>
+<div>
+<%= f.label :apellido%>
+<%= f.text_field :apellido%>
+</div>
+<div>
+<%= f.label :sexo%>
+<%= f.text_field :sexo%>
+</div>
+<div>
+<%= f.label :edad%>
+<%= f.number_field :edad%>
+</div>
+<div>
+<%= f.submit%>
+</div>
+<% end %>
