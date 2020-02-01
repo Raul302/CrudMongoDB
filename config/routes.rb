@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
 
+  get '/products',to:'products#index'
+  get '/products/new',to:'products#new'
+  post '/products/new',to:'products#create'
+  get '/products/:id',to:'products#edit', as:'edit_product'
+  post '/products/:id',to:'products#update'
+  delete '/products/:id',to:'products#destroy'
+  #resources :products
   get '/Crud', to: 'personas#index'
   get '/Crud/new', to: 'personas#new'
   post '/Crud', to: 'personas#create'

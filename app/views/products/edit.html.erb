@@ -1,0 +1,20 @@
+<%= form_for :product  do |f| %>
+
+<div>
+<%= f.label :name%>
+<%= f.text_field :name%>
+</div>
+<div>
+<%= f.label :descripcion%>
+<%= f.text_field :descripcion%>
+</div>
+<div>
+<%= f.label :price%>
+<%= f.text_field :price%>
+</div>
+<div>
+<%=f.submit "Guardar"%>
+</div>
+
+  
+<% end %>
