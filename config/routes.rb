@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root "productos#index"
+  # root "productos#index"
   resources :productos
   # resources :products
   # resources :posts
