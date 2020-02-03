@@ -1,0 +1,6 @@
+development:
+  clients:
+    default:
+      uri: mongodb+srv://raul302:abril302@cluster0-njkts.mongodb.net/crudmongo?retryWrites=true&w=majority
+      options:
+        server_selection_timeout: 5
